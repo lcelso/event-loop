@@ -41,27 +41,28 @@ setTimeout2(() => {
   console.log(`Timeout 1 ${Date.now()}`);
 
   setTimeout2(() => {
-    console.log(`Timeout 4 ${Date.now()}`);
-  }, 3000);
+    console.log(`Timeout 2 ${Date.now()}`);
+  }, 6000);
 
 }, 2000);
-
-setTimeout2(() => {
-  console.log(`Timeout 2 ${Date.now()}`);
-
-  setTimeout2(() => {
-    console.log(`Timeout 5 ${Date.now()}`);
-  }, 3000);
-
-}, 2000);
-
 
 setTimeout2(() => {
   console.log(`Timeout 3 ${Date.now()}`);
 
   setTimeout2(() => {
+    console.log(`Timeout 4 ${Date.now()}`);
+  }, 5000);
+
+}, 2000);
+
+let timer;
+
+setTimeout2(() => {
+  console.log(`Timeout 5 ${Date.now()}`);
+
+  setTimeout2(() => {
     console.log(`Timeout 6 ${Date.now()}`);
-  }, 3000);
+  }, 4000);
 
 }, 2000);
 
